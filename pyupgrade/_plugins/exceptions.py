@@ -96,7 +96,7 @@ def _is_module(node: ast.expr, module: str) -> bool:
 
 def _alias_cbs(
         node: ast.expr,
-        state: State,
+        state: State,  # pragma: no cover
         targets: list[_Target],
 ) -> Iterable[tuple[Offset, TokenFunc]]:
     target = _get_rewrite(node, state, targets)
